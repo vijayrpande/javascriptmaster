@@ -17,5 +17,5 @@ Check you have following prerequisites
 12. You have done one program using CoffeeScript
 13. You know how to use jQuery and done one program with jQuery
 14. You know what is KnockoutJS and have idea of what an observable is
-
+15. You know all the categories and names of the tools under them from the following JavaScript Tools map.
 ![JavaScript Tools Map](JavaScriptTools.png)
