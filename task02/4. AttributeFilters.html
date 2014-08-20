@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Attribute Filters in jQuery</title>
+<script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+        //$("p[class]").css("border", "3px solid red");
+        //$("p[id=mainPara]").css("border", "3px solid red");
+        //$("p[id^=main]").css("border", "3px solid red");
+        $("p[id^=main][lang*=en-]").css("border", "3px solid red");
+    });
+</script>
+<style type="text/css">
+.normal { color: Red; }
+.special { color: Green; }
+</style>
+</head>
+<body>
+	<ul id="mylist">
+		<li class="normal">First List Item</li>
+		<li class="normal">Second List Item</li>
+		<li class="special">Third List Item</li>
+		<li class="special">Fourth List Item</li>
+	</ul>
+<p class="normal">First Paragraph &lt;p class="normal"&gt;</p>
+<p id="mainPara">Second Paragraph with id="mainPara"</p>
+<p class="special">Third Paragraph &lt;p class="special"&gt;</p>
+<p id="mainPlus" lang="en-us">Fourth Paragraph with id="mainPlus" lang="en-us"</p>
+</body>
+</html>

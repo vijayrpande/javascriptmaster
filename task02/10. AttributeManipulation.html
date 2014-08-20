@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Attribute Manipulation in jQuery</title>
+<script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+        //$("a").attr("target", "_self");
+		
+		//$("a").attr("target", "blank");
+
+        //$("a").removeAttr("href");
+
+        //$("img").attr({ src: "images/techforum2.jpg", alt: "spring" });
+    });
+	
+	function buttonClick() {
+		$("img").attr({ src: "images/techforum2.jpg", alt: "spring" });
+	}
+</script>
+<style type="text/css">
+img {
+    margin:20px;
+    width:600px;
+    height:400px;
+    }
+</style>
+</head>
+<body>
+<a href="images/techforum1.jpg"><img src="images/techforum1.jpg" alt="image" /></a>
+<!-- -->
+<input type=button value="Change Image" onclick="buttonClick()">
+
+</body>
+</html>
